@@ -1,0 +1,8 @@
+{
+  "paths": {
+    "components": "src/components",
+    "views": "src/views",
+    "services": "src/services"
+  },
+  "styleType": "scss"
+}
