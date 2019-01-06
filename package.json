@@ -2,6 +2,7 @@
   "name": "vue-generator",
   "version": "1.0.0",
   "description": "A tool to generate components as well as other parts of a vuejs application. The application should preferably follow the structure of an application generated with vue-cli.",
+  "repository": "https://github.com/javif89/vue-make",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
