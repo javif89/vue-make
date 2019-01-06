@@ -34,24 +34,28 @@ By default, vue-make uses the structure of vue applications created with vue-cli
 - views: src/views
 - services (if used): src/services
 
-However you can configure your own paths:
+However you can configure your own paths using one of two approaches:
 
-Using the command line tool:
+- Using the command line tool:
 
-`vue-make config`
+    `vue-make config`
+    
+    Brings up a prompt similar to `npm init` which will ask you to enter the desired configuration values.
 
-Or make a file called `vue-make.json` in your root directory and follow the structure below:
+- Manually creating the config file: 
 
-```json
-{
-  "paths": {
-    "components": "src/components",
-    "views": "src/views",
-    "services": "src/services"
-  },
-  "styleType": "scss"
-}
-```
+    Make a file called `vue-make.json` in your root directory and follow the structure below:
+
+    ```json
+    {
+      "paths": {
+        "components": "src/components",
+        "views": "src/views",
+        "services": "src/services"
+      },
+      "styleType": "scss"
+    }
+    ```
 
 ## Templates
 
