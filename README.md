@@ -1,6 +1,10 @@
 # vue-make
 
+![https://www.npmjs.com/package/vue-make](https://img.shields.io/badge/Version-1.0.0-yellow.svg?style=for-the-badge)
+
 A tool to quickly make templates for components and services in your vue application. Similar to Laravel's artisan.
+
+View on [NPM](https://www.npmjs.com/package/vue-make)
 
 ## Installation
 
