@@ -91,6 +91,16 @@ class Util {
         fs.writeFileSync(path, rendered);
     }
 
+    makeStoreModule(name) {
+        let config = this.loadConfig();
+        let path = `${process.cwd()}/${config.paths.storeModules}/${name}.js`;
+        console.log("Creating Store Module", `${name}.js`.yellow);
+
+        let template = this.getTemplate('storeModule');
+        let rendered = mustache.render(template);
+        fs.writeFileSync(path, rendered);
+    }
+
     makeView(name) {
         let config = this.loadConfig();
         let path = `${process.cwd()}/${config.paths.views}/${name}.vue`;

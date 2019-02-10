@@ -2,7 +2,8 @@
   "paths": {
     "components": "src/components",
     "views": "src/views",
-    "services": "src/services"
+    "services": "src/services",
+    "storeModules": "src/store/modules"
   },
   "styleType": "scss"
 }

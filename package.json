@@ -1,6 +1,6 @@
 {
   "name": "vue-make",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tool to quickly make templates for components and services in your vue application. Similar to Laravel's artisan.",
   "repository": "https://github.com/javif89/vue-make",
   "keywords": ["vue-make","vue-generator","vue templates","vue artisan", "artisan","vue scaffolding", "tools for vue"],
