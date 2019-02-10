@@ -1,7 +1,5 @@
 # vue-make
 
-![https://www.npmjs.com/package/vue-make](https://img.shields.io/badge/Version-1.0.0-yellow.svg?style=for-the-badge)
-
 A tool to quickly make templates for components and services in your vue application. Similar to Laravel's artisan.
 
 View on [NPM](https://www.npmjs.com/package/vue-make)
@@ -22,6 +20,10 @@ Making a View:
 
 `vue-make view MyView`
 
+Making a Store Module:
+
+`vue-make storeModule modulename`
+
 Making a Service:
 
 `vue-make service MyService`
@@ -32,6 +34,7 @@ By default, vue-make uses the structure of vue applications created with vue-cli
 
 - components: src/components
 - views: src/views
+- store modules: /src/store/modules
 - services (if used): src/services
 
 However you can configure your own paths using one of two approaches:
@@ -51,7 +54,8 @@ However you can configure your own paths using one of two approaches:
       "paths": {
         "components": "src/components",
         "views": "src/views",
-        "services": "src/services"
+        "services": "src/services",
+        "storeModules": "src/store/modules"
       },
       "styleType": "scss"
     }
@@ -89,6 +93,41 @@ MyComponent.vue
 <style lang="scss">
 
 </style>
+```
+
+**Store Modules**
+
+module.js
+```javascript
+const state = {
+    var: ''
+}
+
+const getters = {
+    function() {
+
+    }
+}
+
+const actions = {
+    function() {
+
+    }
+}
+
+const mutations = {
+    function() {
+        
+    }
+}
+
+export default {
+    namespaced: true,
+    state,
+    getters,
+    actions,
+    mutations
+}
 ```
 
 **Services**
